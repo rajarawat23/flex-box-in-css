@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image{
+            display: flex;     
+            justify-content: center;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        #para{
+            margin-top:-20px;
+            left: 100px;
+    }
+    h2{
+        margin-left: 38px;
+    }
+    p{
+        margin-left: 38px;
+    }
+    li{
+        list-style: none;
+    }
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 1px solid black;
+        background-color:rgb(214, 206, 220);
+    }
+    button{
+        border-radius: 50px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        padding: 5px 10px;
+        border: none;
+        margin-top: 8px;
+    }
+    #free_plan{
+        background-color:rgb(235, 233, 227);
+        border: 1px solid rgb(235, 233, 227);
+        border-radius: 10px;
+        margin-top:1rem;
+        margin-bottom: 1rem;
+        width: 200px;
+        box-shadow: 9px 10px 8px rgb(9, 9, 33);
+    }
+    #free_button{
+        background-color:rgb(9, 9, 33) ;
+        color: rgb(231, 227, 220);
+    }
+    #basic_plan{
+        background-color: rgb(9, 9, 33);
+        color:rgb(235, 233, 227);;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 9px 9px 7px rgb(17, 17, 44);
+        margin-top:1rem;
+        margin-bottom: 1rem;
+        width: 200px;
+    }
+    #basic_button{
+        background-color:rgb(235, 233, 227);
+    }
+    #Pro_plan{
+        background-color: rgb(235, 233, 227);
+        margin-top: 1rem;
+        box-shadow: 9px 10px 8px rgb(9, 9, 33);
+        margin-bottom: 1rem;
+        border: 1px solid black;
+        width: 200px;
+    }
+    #Pro_button{
+        background-color:rgb(9, 9, 33) ;
+        color:rgb(235, 233, 227);
+    }
+    .price{
+        font-size: 35px;
+        margin-top: -5px;
+        margin-bottom: -8px;       
+    }
+    .logo{
+        height: 50px;
+        width: 50px;
+        margin-left: 20px;
+    }
+    span{
+        margin-left: 30px;
+        font-size: 19px;
+    }
+
+    #safety{
+        color: rgb(1, 119, 1);
+        margin-right: -26px;
+    }
+    #ir{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 29px;
+        margin-bottom: 9px; 
+        margin-left: 30px;
+        font-weight:lighter;
+    }
+    #security{
+        color: rgb(250, 128, 6);
+        margin-right: -26px;
+    }
+    #punctuality{
+        color: rgb(18, 47, 212);
+    }
+    #book_ticket{
+        background-color: rgb(16, 16, 94);
+        color: white;
+        border-radius: 0px;
+        margin-top: 29px;
+        margin-left: 31px;
+        margin-right: -45px;
+    }
+    #booking{
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+        margin-top: 0px;
+        filter: brightness(0) invert(1);
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #status{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 0px;
+        margin-right: -45px;
+        text-align: center;
+        padding-left: 10px;
+        display: inline-block;
+        vertical-align:bottom;
+    }
+    #charts{
+        background-color:white;
+        color: rgb(0, 0, 0);
+        border: 1px solid black;
+        border-radius: 0px;
+        display: inline-block;
+        vertical-align:bottom;
+    }
+    #vacancy{
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .form{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 30px;
+        margin-top: 20px;
+        border: 1px solid black;
+        margin-bottom: 1rex;
+    }
+    .date{
+        display: flex;
+        margin-left: 30px;
+        border: 1px solid black;
+        justify-content: space-around;
+    }
+    .calender{
+        height: 35px;
+        width: 30px;
+    }
+    label{
+        font: 20px;
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 20px;
+        vertical-align: middle;
+    }
+    select{
+        background:transparent;
+        border: none;
+        font-size: xx-large;
+    }
+    .arrow{
+        font-size: 30px;
+        border: 1px solid black;
+        border-radius: 50%;
+        height:fit-content;
+        margin-top: 5%;
+        width: 30px;
+        padding: 1px 6px;
+        margin-right: 50px;
+        background-color: rgb(231, 229, 229);
+        color:rgb(76, 74, 74);
+    }
+    .from{
+        height: 35px;
+        width: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 20px;
+        margin-right: 0px;
+    }  
+    #no{
+        margin-top: 5px;
+    } 
+    #month{
+        margin-top: 18%;
+    }
+    #year{
+        margin-top: 19%;
+    }
+    .cal{
+        display: flex;
+    }
+    #train{
+        height: 100%;
+        width: 90%;
+        /* border: 1px solid black; */
+    }
+    #nav{
+        width: 100%;
+        margin-right: 15%;
+        margin-bottom: 15px;
+    }
+    #id{
+        display: flex;
+        width: 100%;
+    }
+    #parent{
+        display: flex;
+        width: 90%;
+        border: 4px solid black;
+        margin-left: 3%;
+
+    }
+    .anchor{
+        color: black;
+        display: flex;
+        justify-content: end;
+        margin-top: -50px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+    }
+    .log{
+         border-radius: 0%;
+    }
+    #log{
+        margin-left: 700px;   
+        background-color: rgb(240, 129, 10);
+    }
+    #agent{
+        margin-left: 0px;
+        
+    }
+    #reg{
+        margin-left: 0px;
+    }
+    #search_train{
+        border-radius: 0%;
+        margin-top: 5%;
+        width: 95%;
+        padding: 1.5%;
+        font-size: 40px;
+        color: white;
+        background-color: rgb(27, 200, 27);
+    
+    }
+    #right_arrow{
+        font-size:60px;
+        padding: 2%;
+        font-weight :900px;
+        vertical-align:text-top middle;
+    }
+    #ksr-bangalore{
+        margin-left: -60.5%;
+        margin-top: 16%;
+        margin-bottom: 1px;
+    }
+    #ksr-kasaragod{
+        margin-left: -61%;
+        margin-top: 15%;
+        margin-bottom: 1%;
+    }
+     .Kasaragod{
+       margin-top: -8px;
+       padding: 10px;
+     }
+     .label{
+        margin-top: 0%;
+        margin-bottom: 5%;
+        margin-left: 21%;
+     }
+    </style>
+</head>
+<body>
+    <h3>1.Describe the main differences between the CSS Flexbox layout model and the CSS Grid layout model. When
+would you choose to use one over the other?</h3> 
+<p>Ans .Flexbox is a one-dimensional layout model ideal for arranging items in a row or column, perfect for simple, linear designs like navbars. Grid is two-dimensional, allowing control over both rows and columns, making it better for complex layouts like dashboards or full pages. Use Flexbox for flexibility in smaller components, and Grid for structured, larger-scale layouts.</p>
+<h3>2.Explain the role of the following key properties in the Flexbox layout model
+    <ol><li>justify content</li> <li>align-items</li> <li>gap</li> <li>flex-direction</li> <li>flex-wrap</li></ol>
+</h3>
+<p>Ans. <ol><li>justify content- align items along the main axis</li> <li>align-items- align items along the cross axis</li> <li>gap- gives space between flex-items</li> <li>flex-direction- sets the direction of the main axis</li> <li>flex-wrap-allows items to wrap to the next line if needed</li></ol></p>
+<h3>3.Write the code to center a div using CSS Flexbox.</h3>
+<div class="image">
+    <img src="https://plus.unsplash.com/premium_photo-1669748157617-a3a83cc8ea23?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2VhJTIwYmVhY2h8ZW58MHx8MHx8fDA%3D" alt="">
+</div>
+<h3>4.A client of yours wants to add a pricing section on their website to showcase their newly introduced
+premium plans.You have to build the pricing section for their business. They have provided you with the figma design for the
+same. </h3>
+<div class="section">
+    <div id="free_plan">
+        <h2>Free Plan</h2>
+        <p id="para">for personal</p>
+        <p class="price">$0</p>
+        <ol><li>&#9745; 1 users</li> <li>&#9745;4 Web mails.</li> <li>&#9745;Responsive website</li> <li>&#9745;Free SSL</li></ol>
+        <button id="free_button">Subscribe now</button>
+    </div>
+    <div id="basic_plan">
+        <h2 id="Basic_plan">Basic Plan</h2>
+        <p id="para">For small business</p>
+        <p class="price">$29</p>
+        <ol><li>&#9745;4 users</li> <li>&#9745;10 Web mails</li> <li>&#9745;Responsive website</li><li>&#9745;Free SSl</li></ol>
+        <button id="basic_button">Subscribe now</button>
+    </div>
+    <div id="Pro_plan">
+        <h2 id="pro_plan">Pro Plan</h2>
+        <p id="para">Pro Plan</p>
+        <p  class="price">$49</p>
+        <ol><li>&#9745;Unlimited users</li><li>&#9745;Unlimited Web mails</li><li>&#9745;Responnsive Website</li><li>&#9745;Free SSl + SEO</li></ol>
+        <button id="Pro_button">Subscribe now</button>
+    </div>
+</div>
+<h3>5. build a clone of the IRCTC Ticket booking page.</h3>
+<div id="parent">
+    <div id="nav">
+    <div class="navbars">
+        <img class="logo" src="https://images.seeklogo.com/logo-png/18/1/irctc-logo-png_seeklogo-184098.png" alt="">
+        <img class="logo" src="https://5.imimg.com/data5/SELLER/Default/2021/2/GI/JR/US/4184318/irctc-agentship-provider-500x500.png" alt="">
+        <div class="anchor">
+            <a href=""> Ask Disha</a>
+            <a href="">Contact us</a> 
+            <a href="">Alerts</a>
+        </div>
+        <button class="log" id="log">Login</button></a>
+        <button class="log" id="agent" >Agent Login</button></a>
+        <button class="log" id="reg">Register</button></a>
+    </div>
+    <div>
+        <h2 id="ir">Indian  Railways</h2>
+        <span id="safety">Safety</span>
+        <span id="security">Security</span>
+        <span id="punctuality">Punctuality</span><br>
+        <button id="book_ticket"><img id="booking"src="https://png.pngtree.com/png-clipart/20230817/original/pngtree-event-ticket-pass-movie-icon-picture-image_7997234.png" alt=""> Book Ticket</button>
+        <button id="status">&#10003 &nbsp;PNR Status</button>
+        <button id="charts"><img id="vacancy" src="https://p7.hiclipart.com/preview/474/727/812/bar-chart-computer-icons-font-awesome-computer-software-statistics.jpg" alt=""> Charts / Vacancy</button>
+    </div>
+   <div>
+    <div class="form">
+    <div><img class="from" src="from.png" alt="">
+            <label for="">From <br>
+            <select name="" id="">
+            <option value="a">Bangalore</option>
+            <option value="b">Delhi</option>
+            <option value="c">Mumbai</option>
+        </select>
+        <label for="" id="ksr-bangalore">KSR-Bangalore</label>
+         </label>
+    </div>
+    <div class="arrow">&#8646;</div>
+    <div>
+       <div class="Kasaragod">
+           <img class="from" src="image copy.png" alt="">
+           <label for="" id="to">To <br>
+            <select name="" id="">
+            <option value="">Kasaragod</option>
+            <option value="">Kochi</option>
+            <option value="">Kolkata</option>
+        </select>
+        <label for="" id="ksr-kasaragod">KSR-Kasaragod</label>
+        </label>
+       </div>
+    </div>
+    </div>
+    <div class="date">
+       <div>
+         <div class="cal">
+            <div> <img class="from" src="image.png" alt="">
+            <label for="">Date <br>
+            <select name="" id="no">
+                <option value="">01</option>
+                <option value="">02</option>
+                <option value="">03</option>
+            </select>
+            </label>
+            </div>
+            <select name="" id="month">
+                <option value="">Aug</option>
+                <option value="">Sep</option>
+                <option value="">Oct</option>
+            </select>
+            <select name="" id="year">
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+            </select>
+        </div>
+        <label for="" class="label">Tuesday</label>
+       </div>
+        <div>
+            <img class="from" src="image copy 3.png" alt="">
+            <label for="">class <br>
+                <select name="" id="">
+                <option value="">3A</option>
+                <option value="">2A</option>
+                <option value="">1A</option> 
+            </select>
+            </label><br>
+            <span><label class="label" for="">AC 3 tier</label></span>
+        </div>
+        <div>
+            <div>
+            <img class="from" src="tatkalimg.png" alt="">
+            <label for="">Seat type <br>
+                <select name="" id="">
+                <option value="">TATKAL</option>
+                <option value="">General</option>
+                <option value="">Sleeper</option>
+            </select>
+            </label>
+        </div>
+        <span><label class="label" for="">AC 3 Tier</label></span>
+        </div>
+    </div>
+       <button id="search_train">Search Train <b id="right_arrow">&#8594;</b> </button>
+   </div>
+</div>
+<div><img id="train" src="image copy 2.png" alt="" ></div>
+</div>
+</body> 
+</html>
